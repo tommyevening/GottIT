@@ -1,0 +1,73 @@
+/* Style responsywne dla urządzeń mobilnych i mniejszych ekranów */
+@media (max-width: 768px) {
+    /* Ukrycie sidebara na mniejszych ekranach */
+    .sidebar {
+        display: none;
+    }
+
+    .job-cards {
+        grid-template-columns: 1fr; /* Jedna kolumna na małych ekranach */
+        padding: 10px;
+    }
+
+    .job-card {
+        min-height: auto; /* Usuń minimalną wysokość na małych ekranach */
+    }
+
+    /* Zmiana marginesu dla głównej zawartości */
+    .content-area {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* Nawigacja - ukrycie menu i dostosowanie przycisków */
+    .nav-menu {
+        display: none;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Dostosowanie nagłówka dla bardzo małych ekranów */
+    .header {
+        padding: 0.5rem 0;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    /* Zmniejszenie paddingu w kartach ofert pracy */
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-card h3 {
+        font-size: 1rem;
+    }
+
+    .job-details {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .apply-btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Dostosowanie siatki kart ofert pracy */
+    .job-cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+}

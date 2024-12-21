@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GottIT - Oferty Pracy</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/jobCards.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>GottIT</h1>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#home">Start</a></li>
+                <li><a href="#services">Kategorie</a></li>
+                <li><a href="#post-ad">Dodaj ogłoszenie</a></li>
+                <li><a href="#about">Społeczności</a></li>
+                <li><a href="#about">O nas</a></li>
+            </ul>
+
+            <div class="auth-buttons">
+                <button class="btn login">Zaloguj</button>
+                <button class="btn register">Zarejestruj</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Filtry</h2>
+            <div class="filter-section">
+                <div class="filter-header" onclick="toggleFilter(this)">
+                    <span>Branża</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="filter-content">
+                    <input type="text" placeholder="Szukaj branży...">
+                    <ul>
+                        <li>IT</li>
+                        <li>Marketing</li>
+                        <li>Finanse</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header" onclick="toggleFilter(this)">
+                    <span>Lokalizacja</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="filter-content">
+                    <input type="text" placeholder="Szukaj lokalizacji...">
+                    <ul>
+                        <li>Warszawa</li>
+                        <li>Kraków</li>
+                        <li>Wrocław</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header" onclick="toggleFilter(this)">
+                    <span>Wynagrodzenie</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="filter-content">
+                    <ul>
+                        <li>5000 - 10000 PLN</li>
+                        <li>10000 - 15000 PLN</li>
+                        <li>15000+ PLN</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <h1>Najnowsze oferty pracy</h1>
+            <div class="job-cards">
+
+
+
+        <!-- CTu sa dodawane -->
+    
+        
+
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/filters.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

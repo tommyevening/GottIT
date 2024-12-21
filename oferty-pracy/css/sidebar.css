@@ -1,0 +1,61 @@
+.sidebar {
+    width: 300px;
+    background-color: var(--bg-darker);
+    padding: 20px;
+    height: calc(100vh - 80px);
+    position: fixed;
+    left: 0;
+    top: 80px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-section {
+    margin-bottom: 15px;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--bg-dark);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.filter-content input,
+.filter-content ul {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: var(--bg-dark);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.filter-content ul {
+    list-style: none;
+}
+
+.filter-content ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.filter-content ul li:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 3px;
+}
