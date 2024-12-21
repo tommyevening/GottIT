@@ -12,17 +12,31 @@
     
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
+    <link rel="stylesheet" href="../components/headerSection.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/jobCards.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .header {
+    position: fixed;
+    top: 0; /* Przesunięcie nagłówka o 20px w dół */
+    width: 100%;
+    background: rgba(20, 20, 30, 0.95);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <h1>GottIT</h1>
+                <a href="../index.html"><h1>GottIT</h1></a>
             </div>
 
             <ul class="nav-menu">
@@ -106,5 +120,7 @@
     <!-- JavaScript Files -->
     <script src="js/filters.js"></script>
     <script src="js/main.js"></script>
+    <script src="../auth-scripts/login.js"></script>
+    <script src="../auth-scripts/register.js"></script>
 </body>
 </html>
