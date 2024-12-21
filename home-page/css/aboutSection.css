@@ -1,63 +1,57 @@
-.about-image {
-    display: block;
-    margin: 2rem auto;
-    max-width: 100%;
-    height: auto;
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcjonalnie: cień */
-}
+/* aboutSection.css */
 
 /* Modyfikacja sekcji about */
 .about {
-padding: 0; /* Usuwamy padding */
-margin: 0; /* Usuwamy margin */
-width: 100%;
-height: 100vh; /* Pełna wysokość widoku */
-position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    scroll-margin-top: 70px; /* Dostosowujemy do wysokości headera */
 }
 
 .about-container {
-position: relative;
-width: 100%;
-height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .about-image {
-width: 100%;
-height: 100vh; /* Pełna wysokość widoku */
-object-fit: cover; /* Zapewnia odpowiednie dopasowanie obrazu */
-display: block;
-margin: 0;
-padding: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .about-overlay {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background: rgba(0, 0, 0, 0.6);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 2rem;
-color: white;
-text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
 }
 
-/* Dodaj to do istniejącego CSS */
+/* Globalne ustawienie dla scrollowania */
 html {
-scroll-padding-top: 70px; /* Dostosuj tę wartość do wysokości twojego nagłówka */
+    scroll-padding-top: 70px;
 }
 
 .about-overlay h2 {
-margin-bottom: 1rem;
-font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
 }
 
 .about-overlay p {
-max-width: 800px;
-line-height: 1.6;
+    max-width: 800px;
+    line-height: 1.6;
 }
