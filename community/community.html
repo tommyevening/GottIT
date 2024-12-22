@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GottIT - Społeczności</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../authorization/login.css">
+    <link rel="stylesheet" href="../authorization/register.css">
+    <link rel="stylesheet" href="../home-page/css/responsive.css">
+    <link rel="stylesheet" href="../components/headerSection.css">
+    <link rel="stylesheet" href="./community.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="../index.html"><h1>GottIT</h1></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Start</a></li>
+                <li><a href="#post-ad">Społeczności</a></li>
+                <li><a href="../oferty-pracy/oferty-pracy.html">Dla ciebie</a></li>
+                <li><a href="#">Dla firm</a></li>
+            </ul>
+
+            <div class="auth-buttons">
+                <button class="btn login">Zaloguj</button>
+                <button class="btn register">Zarejestruj</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-area">
+        <h1>Wybierz swoją społeczność</h1>
+        <div class="community-grid">
+            <!-- Forum -->
+            <div class="community-card">
+                <img src="../assets/forum.jpg" alt="Forum">
+                <div class="community-info">
+                    <h3>Forum</h3>
+                    <p>Dołącz do dyskusji na forum i wymieniaj się wiedzą z innymi użytkownikami.</p>
+                    <button class="btn primary" onclick="location.href='forum.html'">Przejdź do Forum</button>
+                </div>
+            </div>
+
+            <!-- Twórz projekty z innymi -->
+            <div class="community-card">
+                <img src="../assets/groupsImage.jpg" alt="Twórz projekty">
+                <div class="community-info">
+                    <h3>Twórz projekty z innymi</h3>
+                    <p>Rozpocznij nowy projekt i zaproś innych użytkowników do współpracy.</p>
+                    <button class="btn primary" onclick="location.href='create-project.html'">Rozpocznij Projekt</button>
+                </div>
+            </div>
+
+            <!-- Projekty użytkowników -->
+            <div class="community-card">
+                <img src="../assets/userProjects.jpg" alt="Projekty użytkowników">
+                <div class="community-info">
+                    <h3>Projekty użytkowników</h3>
+                    <p>Przeglądaj projekty stworzone przez innych użytkowników i dołącz do nich.</p>
+                    <button class="btn primary" onclick="location.href='user-projects.html'">Zobacz Projekty</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../authorization/login.js"></script>
+    <script src="../authorization/register.js"></script>
+    <script src="../home-page/js/smoothScrolling.js"></script>
+</body>
+</html>
