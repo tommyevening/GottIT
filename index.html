@@ -39,8 +39,8 @@
                 <li><a href="#home">Start</a></li>
                 <li><a href="#services">Kategorie</a></li>
                 <li><a href="#post-ad">Społeczności</a></li>
-                <li><a href="#about">Dla ciebie</a></li>
-                <li><a href="#about">Dla firm</a></li>
+                <li><a href="./oferty-pracy/oferty-pracy.html">Dla ciebie</a></li>
+                <li><a href="   ">Dla firm</a></li>
             </ul>
 
             <!-- Przyciski logowania/rejestracji -->
@@ -63,57 +63,57 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="feature-container">
-            <div class="feature-card">
-                <i class="fas fa-ad"></i>
-                <h3>Dodaj ogłoszenie</h3>
-                <p>Łatwo i szybko wystaw swoją ofertę</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-search"></i>
-                <h3>Znajdź usługę</h3>
-                <p>Przeszukuj tysiące ogłoszeń</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Bezpieczne transakcje</h3>
-                <p>Gwarantujemy bezpieczeństwo</p>
+    <!-- Kategorie Section -->
+<section class="services" id="services">
+    <h2>Kategorie</h2>
+    <div class="services-grid">
+        <div class="service-card" onclick="redirectToPage('oferty-pracy/oferty-pracy.html')">
+            <img src="assets/hrWoman.jpg" alt="Oferty pracy">
+            <div class="description">Oferty pracy</div>
+            <div class="overlay">
+                <h3>Oferty pracy</h3>
+                <p>Kliknij, aby dowiedzieć się więcej</p>
             </div>
         </div>
-    </section>
+        <div class="service-card" onclick="redirectToPage('buduj-spolecznosc.html')">
+            <img src="assets/społecznosc.jpg" alt="Buduj społeczność">
+            <div class="description">Buduj społeczność</div>
+            <div class="overlay">
+                <h3>Buduj społeczność</h3>
+                <p>Połącz się z innymi</p>
+            </div>
+        </div>
+        <div class="service-card" onclick="redirectToPage('freelancing.html')">
+            <img src="assets/freelancing.jpg" alt="Freelancing">
+            <div class="description">Freelancing</div>
+            <div class="overlay">
+                <h3>Freelancing</h3>
+                <p>Znajdź idealne zlecenie</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2>Kategorie</h2>
-        <div class="services-grid">
-            <div class="service-card" onclick="redirectToPage('oferty-pracy/oferty-pracy.html')">
-                <img src="assets/hrWoman.jpg" alt="Oferty pracy">
-                <div class="description">Oferty pracy</div>
-                <div class="overlay">
-                    <h3>Oferty pracy</h3>
-                    <p>Kliknij, aby dowiedzieć się więcej</p>
-                </div>
-            </div>
-            <div class="service-card" onclick="redirectToPage('freelancing.html')">
-                <img src="assets/freelancing.jpg" alt="Freelancing">
-                <div class="description">Freelancing</div>
-                <div class="overlay">
-                    <h3>Freelancing</h3>
-                    <p>Znajdź idealne zlecenie</p>
-                </div>
-            </div>
-            <div class="service-card" onclick="redirectToPage('buduj-spolecznosc.html')">
-                <img src="assets/społecznosc.jpg" alt="Buduj społeczność">
-                <div class="description">Buduj społeczność</div>
-                <div class="overlay">
-                    <h3>Buduj społeczność</h3>
-                    <p>Połącz się z innymi</p>
-                </div>
-            </div>
+<!-- Features Section -->
+<section class="features">
+    <div class="feature-container">
+        <div class="feature-card">
+            <i class="fas fa-ad"></i>
+            <h3>Dodaj ogłoszenie</h3>
+            <p>Łatwo i szybko wystaw swoją ofertę</p>
         </div>
-    </section>
+        <div class="feature-card">
+            <i class="fas fa-search"></i>
+            <h3>Znajdź usługę</h3>
+            <p>Przeszukuj tysiące ogłoszeń</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Bezpieczne transakcje</h3>
+            <p>Gwarantujemy bezpieczeństwo</p>
+        </div>
+    </div>
+</section>
 
     <!-- About Section -->
     <section class="about" id="about">
