@@ -52,3 +52,4 @@ document.querySelector('.hero-buttons .btn.secondary:last-child').addEventListen
         behavior: 'smooth'
     });
 });
+
